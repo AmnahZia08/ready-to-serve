@@ -1,5 +1,10 @@
-import Image from "next/image";
+import Navbar from "./components/navbar";
+import { poppins } from "./utils/fonts";
 
 export default function Home() {
-  return <p>HERE GOES NEXTJS APP</p>;
+  return (
+    <main className={poppins}>
+      <Navbar />
+    </main>
+  );
 }

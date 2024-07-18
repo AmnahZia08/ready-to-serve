@@ -1,5 +1,6 @@
 "use client";
 
+import { ButtonType } from "@/types";
 import {
   Button as ButtonFB,
   ButtonProps,
@@ -7,19 +8,16 @@ import {
 } from "flowbite-react";
 import React from "react";
 
-enum ButtonType {
-  PRIMARY = "primary",
-  SECONDARY = "secondary",
-}
-
 type Props = ButtonProps & {
   variant?: ButtonType;
 };
 
 const customTheme: CustomFlowbiteTheme["button"] = {
   color: {
-    primary: "bg-dark text-white border-2 border-dark hover:bg-white hover:text-dark",
-    secondary: "bg-white text-dark border-2 border-dark hover:bg-dark hover:text-white",
+    primary:
+      "bg-dark text-white border-2 border-dark hover:bg-white hover:text-dark",
+    secondary:
+      "bg-white text-dark border-2 border-dark hover:bg-dark hover:text-white",
   },
 };
 
@@ -35,8 +33,8 @@ const Button: React.FC<Props> = ({
           ? ButtonType.PRIMARY
           : ButtonType.SECONDARY
       }
-      className={`rounded-md font-poppins w-full ${props.className ?? ""}`}
       {...props}
+      className={`rounded-md font-poppins w-full ${props.className ?? ""}`}
     >
       {props.children}
     </ButtonFB>

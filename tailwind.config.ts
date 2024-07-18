@@ -21,9 +21,10 @@ const config: Config = {
     },
     borderRadius: {
       md: "5px",
+      lg: "8px",
     },
     fontFamily: {
-      poppins: ['var(--font-poppins)'],
+      poppins: ["var(--font-poppins)"],
     },
   },
   plugins: [flowbite.plugin()],
