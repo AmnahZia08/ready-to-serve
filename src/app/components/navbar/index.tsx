@@ -80,53 +80,57 @@ const Component = () => {
           <NavbarFB.Collapse></NavbarFB.Collapse>
         </NavbarFB>
         {toggle ? (
-          <div className="px-8 w-full md:w-1/2 max-w-[400px] flex flex-col bg-white py-5">
-            <Button className="text-sm">Sign Up</Button>
-            <p className="text-sm hover:underline my-3 font-poppins font-semibold w-full border-b text-center pb-3">
-              Log In
-            </p>
-            <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
-              About RTS
-            </p>
-            <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
-              Newsroom
-            </p>
-            <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
-              Careers
-            </p>
-            <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins border-b pb-3 mb-1">
-              Contact
-            </p>
-            <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
-              Become a partner
-            </p>
-            <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins border-b pb-3 mb-1">
-              Sign up to deliver
-            </p>
-            <div className="flex gap-3 items-center mt-3">
-              <div className="px-2 py-4 bg-dark rounded-lg">
-                <Image
-                  src={"/assets/logo.png"}
-                  height={20}
-                  width={40}
-                  alt="ready-to-serve"
-                />
+          <>
+            <div className="h-screen bg-[#00000090] z-0">
+              <div className="px-8 w-full md:w-1/2 max-w-[400px] flex flex-col bg-white py-5 z-50">
+                <Button className="text-sm">Sign Up</Button>
+                <p className="text-sm hover:underline my-3 font-poppins font-semibold w-full border-b text-center pb-3">
+                  Log In
+                </p>
+                <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
+                  About RTS
+                </p>
+                <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
+                  Newsroom
+                </p>
+                <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
+                  Careers
+                </p>
+                <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins border-b pb-3 mb-1">
+                  Contact
+                </p>
+                <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">
+                  Become a partner
+                </p>
+                <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins border-b pb-3 mb-1">
+                  Sign up to deliver
+                </p>
+                <div className="flex gap-3 items-center mt-3">
+                  <div className="px-2 py-4 bg-dark rounded-lg">
+                    <Image
+                      src={"/assets/logo.png"}
+                      height={20}
+                      width={40}
+                      alt="ready-to-serve"
+                    />
+                  </div>
+                  <p className="text-sm font-poppins">
+                    More delights await in the app.
+                  </p>
+                </div>
+                <div className="flex gap-5 mt-3">
+                  <div className="flex gap-2 items-center bg-gray-100 px-3 py-2 rounded-lg">
+                    <AiOutlineApple size={18} />
+                    <p className="text-sm">iPhone</p>
+                  </div>
+                  <div className="flex gap-2 items-center bg-gray-100 px-3 py-2 rounded-lg">
+                    <AiOutlineAndroid size={18} />
+                    <p className="text-sm">Android</p>
+                  </div>
+                </div>
               </div>
-              <p className="text-sm font-poppins">
-                More delights await in the app.
-              </p>
             </div>
-            <div className="flex gap-5 mt-3">
-              <div className="flex gap-2 items-center bg-gray-100 px-3 py-2 rounded-lg">
-                <AiOutlineApple size={18} />
-                <p className="text-sm">iPhone</p>
-              </div>
-              <div className="flex gap-2 items-center bg-gray-100 px-3 py-2 rounded-lg">
-                <AiOutlineAndroid size={18} />
-                <p className="text-sm">Android</p>
-              </div>
-            </div>
-          </div>
+          </>
         ) : null}
       </Container>
     </div>
