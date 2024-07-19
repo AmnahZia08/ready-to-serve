@@ -58,7 +58,7 @@ const navbarTheme: FlowbiteNavbarTheme = {
 const Component = () => {
   const [toggle, setToggle] = React.useState(false);
   return (
-    <div className="fixed z-50 w-screen">
+    <div className="fixed z-50 w-screen h-16">
       <Container>
         <NavbarFB fluid rounded theme={navbarTheme}>
           <div className="flex">
@@ -74,7 +74,7 @@ const Component = () => {
             </NavbarFB.Brand>
           </div>
           <div className="flex md:order-2 items-center">
-            <p className="text-nowrap mr-3 text-sm">Log In</p>
+            <p className="text-nowrap mr-5 text-sm cursor-pointer hover:underline">Log In</p>
             <Button className="text-sm">Sign Up</Button>
           </div>
           <NavbarFB.Collapse></NavbarFB.Collapse>
@@ -84,7 +84,7 @@ const Component = () => {
             <div className="h-screen bg-[#00000090] z-0">
               <div className="px-8 w-full md:w-1/2 max-w-[400px] flex flex-col bg-white py-5 z-50">
                 <Button className="text-sm">Sign Up</Button>
-                <p className="text-sm hover:underline my-3 font-poppins font-semibold w-full border-b text-center pb-3">
+                <p className="text-sm hover:underline my-3 font-poppins font-semibold w-full border-b text-center pb-3 cursor-pointer">
                   Log In
                 </p>
                 <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins">

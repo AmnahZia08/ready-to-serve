@@ -10,6 +10,7 @@ import React from "react";
 
 type Props = ButtonProps & {
   variant?: ButtonType;
+  textClassnames?: string;
 };
 
 const customTheme: CustomFlowbiteTheme["button"] = {
@@ -23,6 +24,7 @@ const customTheme: CustomFlowbiteTheme["button"] = {
 
 const Button: React.FC<Props> = ({
   variant = ButtonType.PRIMARY,
+  textClassnames = "",
   ...props
 }) => {
   return (
@@ -36,7 +38,7 @@ const Button: React.FC<Props> = ({
       {...props}
       className={`rounded-md font-poppins w-full ${props.className ?? ""}`}
     >
-      {props.children}
+      <p className={`text-sm ${textClassnames}`}>{props.children}</p>
     </ButtonFB>
   );
 };

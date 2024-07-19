@@ -14,6 +14,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        hero: "url('../../public/assets/banner.png')",
       },
     },
     colors: {
@@ -22,6 +23,8 @@ const config: Config = {
     borderRadius: {
       md: "5px",
       lg: "8px",
+      xl: "12px",
+      "2xl": "24px",
     },
     fontFamily: {
       poppins: ["var(--font-poppins)"],
