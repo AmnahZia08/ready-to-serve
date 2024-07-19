@@ -5,6 +5,8 @@ import Button from "../button";
 import Image from "next/image";
 import React from "react";
 import Container from "../container";
+import { AiOutlineApple } from "react-icons/ai";
+import { AiOutlineAndroid } from "react-icons/ai";
 
 const navbarTheme: FlowbiteNavbarTheme = {
   root: {
@@ -101,7 +103,7 @@ const Component = () => {
             <p className="mt-3 text-sm cursor-pointer hover:font-semibold font-poppins border-b pb-3 mb-1">
               Sign up to deliver
             </p>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 items-center mt-3">
               <div className="px-2 py-4 bg-dark rounded-lg">
                 <Image
                   src={"/assets/logo.png"}
@@ -113,6 +115,16 @@ const Component = () => {
               <p className="text-sm font-poppins">
                 More delights await in the app.
               </p>
+            </div>
+            <div className="flex gap-5 mt-3">
+              <div className="flex gap-2 items-center bg-gray-100 px-3 py-2 rounded-lg">
+                <AiOutlineApple size={18} />
+                <p className="text-sm">iPhone</p>
+              </div>
+              <div className="flex gap-2 items-center bg-gray-100 px-3 py-2 rounded-lg">
+                <AiOutlineAndroid size={18} />
+                <p className="text-sm">Android</p>
+              </div>
             </div>
           </div>
         ) : null}
