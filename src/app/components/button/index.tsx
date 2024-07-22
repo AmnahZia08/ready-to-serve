@@ -41,7 +41,7 @@ const Button: React.FC<Props> = ({
       {...props}
       className={`rounded-md font-poppins w-full ${props.className ?? ""}`}
     >
-      <p className={`text-sm ${textClassnames}`}>{props.children}</p>
+      <div className={`text-sm ${textClassnames}`}>{props.children}</div>
       {showRightIcon ? <BsArrowRight className="self-center ml-3"/> : null}
     </ButtonFB>
   );

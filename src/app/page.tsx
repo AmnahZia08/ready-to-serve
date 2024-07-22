@@ -1,5 +1,6 @@
 import Container from "./components/container";
 import OurStory from "./components/home-page/our-story";
+import PartnerWithUs from "./components/home-page/partner-with-us";
 import SectionFour from "./components/home-page/section-four";
 import SectionThree from "./components/home-page/section-three";
 import ServiceBtns from "./components/home-page/service-btn";
@@ -25,6 +26,7 @@ export default function Home() {
         <OurStory />
         <SectionThree />
         <SectionFour />
+        <PartnerWithUs />
       </Container>
     </main>
   );
