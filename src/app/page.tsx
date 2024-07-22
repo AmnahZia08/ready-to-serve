@@ -1,5 +1,7 @@
 import Container from "./components/container";
 import OurStory from "./components/home-page/our-story";
+import SectionFour from "./components/home-page/section-four";
+import SectionThree from "./components/home-page/section-three";
 import ServiceBtns from "./components/home-page/service-btn";
 import { poppins } from "./utils/fonts";
 
@@ -21,6 +23,8 @@ export default function Home() {
           </div>
         </div>
         <OurStory />
+        <SectionThree />
+        <SectionFour />
       </Container>
     </main>
   );

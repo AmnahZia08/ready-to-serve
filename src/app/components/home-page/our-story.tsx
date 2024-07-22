@@ -2,8 +2,8 @@ import Button from "../button";
 
 const OurStory = () => {
   return (
-    <div className="flex flex-col justify-center gap-3 py-10 px-5 items-center">
-      <p className="text-center text-4xl">Our Story</p>
+    <div className="flex flex-col justify-center gap-3 py-10 px-5 items-center bg-section-gray">
+      <p className="text-center text-4xl font-semibold">Our Story</p>
       <p className="text-center text-xl">
         In a world where the quest for financial independence often seems
         daunting, "Ready to Serve" emerged as a beacon of hope and empowerment.

@@ -19,6 +19,7 @@ const config: Config = {
     },
     colors: {
       dark: "#000",
+      "section-gray": "#FBFBFB",
     },
     borderRadius: {
       md: "5px",
