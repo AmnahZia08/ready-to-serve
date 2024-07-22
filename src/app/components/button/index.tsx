@@ -7,10 +7,12 @@ import {
   CustomFlowbiteTheme,
 } from "flowbite-react";
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 type Props = ButtonProps & {
   variant?: ButtonType;
   textClassnames?: string;
+  showRightIcon?: boolean;
 };
 
 const customTheme: CustomFlowbiteTheme["button"] = {
@@ -25,6 +27,7 @@ const customTheme: CustomFlowbiteTheme["button"] = {
 const Button: React.FC<Props> = ({
   variant = ButtonType.PRIMARY,
   textClassnames = "",
+  showRightIcon = false,
   ...props
 }) => {
   return (
@@ -39,6 +42,7 @@ const Button: React.FC<Props> = ({
       className={`rounded-md font-poppins w-full ${props.className ?? ""}`}
     >
       <p className={`text-sm ${textClassnames}`}>{props.children}</p>
+      {showRightIcon ? <BsArrowRight className="self-center ml-3"/> : null}
     </ButtonFB>
   );
 };

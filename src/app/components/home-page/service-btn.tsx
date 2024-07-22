@@ -25,7 +25,7 @@ const BTNS: BtnType = {
 
 const ServiceBtns = () => {
   return (
-    <div className="flex gap-5 mt-7">
+    <div className="flex gap-5 mt-7 flex-wrap justify-around">
       {Object.keys(BTNS).map((item) => {
         return (
           <div className="w-24 flex flex-col items-center cursor-pointer">
