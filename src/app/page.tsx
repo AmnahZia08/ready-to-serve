@@ -2,6 +2,7 @@ import Container from "./components/container";
 import OurStory from "./components/home-page/our-story";
 import PartnerWithUs from "./components/home-page/partner-with-us";
 import SectionFour from "./components/home-page/section-four";
+import SectionSix from "./components/home-page/section-six";
 import SectionThree from "./components/home-page/section-three";
 import ServiceBtns from "./components/home-page/service-btn";
 import { poppins } from "./utils/fonts";
@@ -27,6 +28,7 @@ export default function Home() {
         <SectionThree />
         <SectionFour />
         <PartnerWithUs />
+        <SectionSix />
       </Container>
     </main>
   );
