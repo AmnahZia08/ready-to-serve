@@ -28,7 +28,10 @@ const ServiceBtns = () => {
     <div className="flex gap-5 mt-7 flex-wrap justify-around">
       {Object.keys(BTNS).map((item) => {
         return (
-          <div className="w-24 flex flex-col items-center cursor-pointer">
+          <div
+            className="w-24 flex flex-col items-center cursor-pointer"
+            key={BTNS[item].text}
+          >
             <Image
               src={BTNS[item].image}
               height={68}

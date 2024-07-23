@@ -25,6 +25,7 @@ const PartnerWithUs = () => {
       <div className="flex w-full gap-5 justify-evenly flex-wrap">
         {CARDS.map((card) => (
           <Card
+            key={card.text}
             heading={card.heading}
             text={card.text}
             image={`/assets/home-page/${card.image}`}

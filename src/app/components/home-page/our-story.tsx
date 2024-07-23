@@ -6,7 +6,7 @@ const OurStory = () => {
       <p className="text-center text-4xl font-semibold">Our Story</p>
       <p className="text-center text-xl">
         In a world where the quest for financial independence often seems
-        daunting, "Ready to Serve" emerged as a beacon of hope and empowerment.
+        daunting, &quot;Ready to Serve&quot; emerged as a beacon of hope and empowerment.
       </p>
       <Button className="w-40 mt-7" showRightIcon>
         Read more
