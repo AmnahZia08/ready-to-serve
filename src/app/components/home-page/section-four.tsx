@@ -22,7 +22,7 @@ const SectionFour = () => {
             fingertips. Go ahead, download Ready-To-Serve now.
           </p>
 
-          <div className="flex gap-3 mt-7">
+          <div className="flex gap-3 mt-7 flex-wrap">
             <Button className="w-[180px]">
               <div className="flex gap-2">
                 <BsApple size={30} />

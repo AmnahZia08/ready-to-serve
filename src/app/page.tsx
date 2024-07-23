@@ -1,4 +1,5 @@
 import Container from "./components/container";
+import Footer from "./components/footer";
 import OurStory from "./components/home-page/our-story";
 import PartnerWithUs from "./components/home-page/partner-with-us";
 import SectionFour from "./components/home-page/section-four";
@@ -29,6 +30,7 @@ export default function Home() {
         <SectionFour />
         <PartnerWithUs />
         <SectionSix />
+        <Footer />
       </Container>
     </main>
   );
